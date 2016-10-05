@@ -112,6 +112,17 @@ function update(elapsedTime) {
   });
 
   // process collisions
+  /*KE = .5mv^2
+  Ka + Kb = E = Ka1 + Kb1 + C  
+  Unknowns: Va1, Vb1*/
+  /*Momentum
+   p = mv
+   p0 = p1
+   pa0 + pb0 = pa1 + pb1
+  */
+  /* a.futureVelocity = a.velocity + b.velocity - b.futureVelocity
+    
+  */
   var i, j, collisionPairs = [];
   for(i = 0; i < 15; i++) {
     for(j = i; j < 15; j++){
